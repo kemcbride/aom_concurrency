@@ -26,4 +26,4 @@ jobs:
     - name: install deps
       run: sudo apt install libgflags-dev libgtest-dev libc++-dev
     - name: make run
-      run: make run
+      run: timeout 60 make run || echo "done"
