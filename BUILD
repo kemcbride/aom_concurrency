@@ -16,5 +16,18 @@ cc_library(
     srcs = [
         "src/map.cpp",
     ],
+    deps = [
+      ":maploc",
+    ],
+)
+
+cc_library(
+    name = "maploc",
+    hdrs = [
+        "src/maploc.h",
+    ],
+    srcs = [
+        "src/maploc.cpp",
+    ],
     deps = [],
 )
